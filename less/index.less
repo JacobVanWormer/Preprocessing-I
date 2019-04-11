@@ -157,6 +157,7 @@ h3 {
 // Vairables
 @color: grey;
 @font-size: 1.5rem;
+@table-font: 1rem;
 @h1-color: white;
 
 // Mixins
@@ -177,11 +178,19 @@ h3 {
     background-color: @color;
   }
 
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    border: 1px solid @color;
+    font-size: @font-size;
+  }
+
   td {
     border: 1px solid @color;
     border-collapse: collapse;
     width: 400px;
-    font-size: @font-size;
+    font-size: @table-font;
     padding: 8px;
   }
 }
@@ -235,7 +244,7 @@ nav {
     bottom: 150px;
     color: @color;
     margin-bottom: 0;
-    border-bottom: 2px solid grey;
+    border-bottom: solid 2px grey;
   }
 }
 
@@ -269,5 +278,23 @@ nav {
   .skill-table();
 }
 
-.history-table {
+.work-history {
+  .skill-table();
+
+  h2 {
+    margin-bottom: 50px;
+  }
+}
+
+footer {
+  background-color: @color;
+  margin-top: 40px;
+  height: 50px;
+
+  p {
+    color: white;
+    margin-left: 340px;
+    position: relative;
+    top: 20px;
+  }
 }
