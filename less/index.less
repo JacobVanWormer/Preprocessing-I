@@ -140,20 +140,20 @@ body {
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1 {
+  font-size: 4rem;
+}
+h2 {
   font-size: 3rem;
 }
 
 // Vairables
 @color: grey;
+@font-size: 1.5rem;
+@h1-color: white;
 
 .container {
   max-width: 800px;
-  font-size: 1.5rem;
   margin: 0 auto;
 }
 
@@ -165,5 +165,42 @@ nav {
   a {
     text-decoration: none;
     color: @color;
+    font-size: @font-size;
+  }
+
+  a:hover {
+    color: black;
+  }
+}
+
+.name {
+  display: flex;
+  background-color: @color;
+  padding-bottom: 200px;
+
+  h1 {
+    display: flex;
+    margin-left: 160px;
+    margin-top: 150px;
+    color: @h1-color;
+  }
+}
+
+.image {
+  height: 400px;
+  position: relative;
+  left: 190px;
+  bottom: 170px;
+  border-radius: 50%;
+}
+
+.intro {
+  h2 {
+    padding-left: 250px;
+    position: relative;
+    bottom: 150px;
+    color: @color;
+    margin-bottom: 0;
+    border-bottom: 2px solid grey;
   }
 }

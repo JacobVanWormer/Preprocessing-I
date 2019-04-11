@@ -135,16 +135,14 @@ body {
   height: 100%;
   box-sizing: border-box;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1 {
+  font-size: 4rem;
+}
+h2 {
   font-size: 3rem;
 }
 .container {
   max-width: 800px;
-  font-size: 1.5rem;
   margin: 0 auto;
 }
 nav {
@@ -155,4 +153,34 @@ nav {
 nav a {
   text-decoration: none;
   color: grey;
+  font-size: 1.5rem;
+}
+nav a:hover {
+  color: black;
+}
+.name {
+  display: flex;
+  background-color: grey;
+  padding-bottom: 200px;
+}
+.name h1 {
+  display: flex;
+  margin-left: 160px;
+  margin-top: 150px;
+  color: white;
+}
+.image {
+  height: 400px;
+  position: relative;
+  left: 190px;
+  bottom: 170px;
+  border-radius: 50%;
+}
+.intro h2 {
+  padding-left: 250px;
+  position: relative;
+  bottom: 150px;
+  color: grey;
+  margin-bottom: 0;
+  border-bottom: 2px solid grey;
 }
