@@ -148,13 +148,22 @@ h5 {
   font-size: 3rem;
 }
 
+// Vairables
+@color: grey;
+
 .container {
   max-width: 800px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0 auto;
 }
 
-.nav {
+nav {
   display: flex;
-  margin-left: 500px;
+  justify-content: space-around;
+  margin-left: 400px;
+
+  a {
+    text-decoration: none;
+    color: @color;
+  }
 }
