@@ -145,12 +145,46 @@ h1 {
 }
 h2 {
   font-size: 3rem;
+  color: @color;
+}
+p {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 2rem;
 }
 
 // Vairables
 @color: grey;
 @font-size: 1.5rem;
 @h1-color: white;
+
+// Mixins
+
+.button() {
+  background-color: @color;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.skill-table() {
+  tr:nth-child(even) {
+    background-color: @color;
+  }
+
+  td {
+    border: 1px solid @color;
+    border-collapse: collapse;
+    width: 400px;
+    font-size: @font-size;
+    padding: 8px;
+  }
+}
 
 .container {
   max-width: 800px;
@@ -203,4 +237,37 @@ nav {
     margin-bottom: 0;
     border-bottom: 2px solid grey;
   }
+}
+
+.small-projects {
+  border-bottom: 2px solid grey;
+  padding-bottom: 100px;
+
+  p {
+    margin-bottom: 50px;
+  }
+
+  button {
+    .button();
+  }
+}
+
+.about-section {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  .about {
+    width: 400px;
+    padding-right: 50px;
+  }
+
+  .skill-table();
+}
+
+.history-table {
 }

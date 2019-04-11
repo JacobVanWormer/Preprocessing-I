@@ -140,6 +140,13 @@ h1 {
 }
 h2 {
   font-size: 3rem;
+  color: grey;
+}
+p {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 2rem;
 }
 .container {
   max-width: 800px;
@@ -183,4 +190,43 @@ nav a:hover {
   color: grey;
   margin-bottom: 0;
   border-bottom: 2px solid grey;
+}
+.small-projects {
+  border-bottom: 2px solid grey;
+  padding-bottom: 100px;
+}
+.small-projects p {
+  margin-bottom: 50px;
+}
+.small-projects button {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.about-section {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.about-section h2 {
+  margin-bottom: 50px;
+}
+.about-section .about {
+  width: 400px;
+  padding-right: 50px;
+}
+.about-section tr:nth-child(even) {
+  background-color: grey;
+}
+.about-section td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  width: 400px;
+  font-size: 1.5rem;
+  padding: 8px;
 }
